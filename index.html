@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Provinceman</title>
+    <link rel="icon" href="/assets/favicon1.png" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <audio id="bg-audio" src="/assets/action.mp3" type="audio/mpeg"></audio>
+
+    <div id="gameContainer" onclick="gunSound.play()">
+      <section class="hero-section">
+        <img class="logo" src="/assets/provincemanLogo.png" alt="game logo" />
+
+        <div id="game-buttons">
+          <img
+            class="new-game"
+            src="/assets/new game.png"
+            alt="new game button"
+            onclick="newGame()"
+          />
+
+          <img
+            class="how-to-play"
+            id="howToPlay"
+            src="/assets/how to play.png"
+            alt="how to play button"
+            onmouseover="instructions()"
+            onmouseleave="instructionsOut()"
+          />
+          <img
+            src="/assets/game-instructions.png"
+            alt="game instructions"
+            id="instructions"
+          />
+        </div>
+      </section>
+
+      <img id="hpIcon" src="/assets/hp.png" alt="" />
+      <div id="health"></div>
+      <div class="banner" id="banner"></div>
+      <img id="winBanner" src="/assets/win.png" alt="you win" />
+      <img id="loseBanner" src="/assets/you lose.png" alt="you lose" />
+
+      <div id="exitButton">
+        <img src="/assets/exit.png" alt="exit button" onclick="exit()" />
+      </div>
+      <div id="infoButton">
+        <img
+          src="/assets/info.png"
+          alt="info"
+          onmouseover="credits()"
+          onmouseleave="creditsOut()"
+        />
+      </div>
+
+      <div id="credits">
+        <img src="/assets/credits5.png" alt="credits" />
+      </div>
+
+      <div class="gangster" id="gangster1" onclick="shoot(this)">
+        <img src="/assets/gangster.png" alt="gangster" />
+      </div>
+
+      <div class="gangster" id="gangster2" onclick="shoot(this)">
+        <img src="/assets/gangster.png" alt="gangster" />
+      </div>
+
+      <div class="gangster" id="gangster3" onclick="shoot(this)">
+        <img src="/assets/gangster.png" alt="gangster" />
+      </div>
+
+      <div class="gangster" id="gangster4" onclick="shoot(this)">
+        <img src="/assets/gangster.png" alt="gangster" />
+      </div>
+
+      <div class="gangster" id="gangster5" onclick="shoot(this)">
+        <img src="/assets/gangster.png" alt="gangster" />
+      </div>
+
+      <div class="gangster" id="gangster6" onclick="shoot(this)">
+        <img src="/assets/gangster.png" alt="gangster" />
+      </div>
+
+      <div class="gangster" id="gangster7" onclick="shoot(this)">
+        <img src="/assets/gangster.png" alt="gangster" />
+      </div>
+
+      <div class="gangster" id="gangster8" onclick="shoot(this)">
+        <img src="/assets/gangster.png" alt="gangster" />
+      </div>
+
+      <div id="footer">
+        <h4><a href="https://suello.tech">bryansuello@gmail.com</a></h4>
+        <h4><a href="https://suello.tech">suello.tech</a></h4>
+        <h4><a href="https://suello.tech">hello@suello.tech</a></h4>
+      </div>
+    </div>
+
+    <!-- *ADD difficulty levels: easy, medium, hard, extra hard, extra-extra hard
+    #story with blur bg
+    #difficulty levels
+    #ss with the machine
+  --></body>
+</html>

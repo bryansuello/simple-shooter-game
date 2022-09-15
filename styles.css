@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  width: 45%;
+  padding-top: 30px;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#game-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.new-game,
+.how-to-play {
+  padding-top: 10px;
+  width: 30%;
+  margin-top: 10px;
+}
+.new-game:hover,
+.how-to-play:hover,
+#exitButton:hover,
+#infoButton:hover {
+  transform: scale(1.1);
+  cursor: url("/assets/crosshairblack.png"), auto;
+}
+
+#instructions {
+  visibility: hidden;
+  width: 60%;
+  height: 240px;
+}
+#exitButton {
+  visibility: hidden;
+  position: absolute;
+  bottom: 550px;
+  left: 1050px;
+}
+#infoButton {
+  position: absolute;
+  bottom: 565px;
+  left: 1300px;
+}
+#credits {
+  width: 40px;
+  position: absolute;
+  bottom: 440px;
+  left: 705px;
+  visibility: hidden;
+}
+
+#winBanner,
+#loseBanner {
+  position: absolute;
+  width: 65%;
+  bottom: 200px;
+  left: 280px;
+  visibility: hidden;
+}
+
+#gameContainer {
+  font-family: "SF Collegiate", serif;
+  font-style: italic;
+  background-image: url(/assets/alley3-adjusted2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: url("/assets/crosshair1.png"), auto;
+}
+
+.gangster {
+  width: 230px;
+  height: 400px;
+  position: absolute;
+  bottom: -400px;
+  transition: all 0.5s;
+}
+.gangster img {
+  width: 100%;
+  height: 100%;
+}
+.gangster.showing {
+  bottom: 0px;
+}
+
+#health {
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  height: 25px;
+  width: 80%;
+  background-color: rgb(255, 0, 64);
+  border: 5px solid rgb(0, 0, 0);
+  transition: width 0.5s;
+  visibility: hidden;
+}
+#hpIcon {
+  visibility: hidden;
+  position: absolute;
+  left: 7%;
+  top: 25.5%;
+}
+
+/* gangster positions */
+#gangster1 {
+  left: 5px;
+}
+#gangster2 {
+  left: 165px;
+}
+#gangster3 {
+  left: 325px;
+}
+#gangster4 {
+  left: 485px;
+}
+#gangster5 {
+  left: 645px;
+}
+#gangster6 {
+  left: 845px;
+}
+#gangster7 {
+  left: 945px;
+}
+#gangster8 {
+  left: 1045px;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  position: absolute;
+  bottom: 19px;
+  left: 135px;
+  font-family: "SF Collegiate Italic", serif;
+  color: white;
+}
+a,
+a:active,
+a:visited,
+a:link,
+a:hover {
+  color: aliceblue;
+  text-decoration: none;
+}
